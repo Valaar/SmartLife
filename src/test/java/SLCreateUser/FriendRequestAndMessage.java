@@ -77,6 +77,8 @@ public class FriendRequestAndMessage {
         driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/slp-send-message-dialog/slp-dialog-wrapper/div[2]/div/div[3]/div/textarea")).sendKeys("Test message"); //message
         driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/slp-send-message-dialog/slp-dialog-wrapper/div[3]/div/button/span")).click(); //click Send button
 
+        driver.quit();
+
     }
 
 }

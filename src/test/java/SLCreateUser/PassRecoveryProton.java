@@ -69,7 +69,7 @@ public class PassRecoveryProton {
 
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-my-stream/div/slp-user-menu/div[2]/div/div[1]")));
         assertTrue(driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-my-stream/div/slp-user-menu/div[2]/div/div[1]")).getText().contains("Test_protonmail"));
+
+        driver.quit();
     }
 }
-//*[@id="message3"]/div[2]/div[3]/div/table/tbody/tr/td/table[2]/tbody/tr[3]/td/a
-//*[@id="message0"]/div[2]/div[3]/div/table/tbody/tr/td/table[2]/tbody/tr[3]/td/a

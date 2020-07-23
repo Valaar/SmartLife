@@ -85,6 +85,8 @@ public class CreateNewUser {
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[2]/div/form/div[4]/div[2]/mat-form-field/div/div[1]/div[3]/input")).sendKeys("Qwerty123"); //enter password
         Thread.sleep(1000);
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[2]/div/form/div[5]/div/button/span")).click(); //click Sign Up button
+
+        driver.quit();
     }
 
 }
