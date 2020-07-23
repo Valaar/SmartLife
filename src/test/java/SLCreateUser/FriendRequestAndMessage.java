@@ -13,7 +13,7 @@ import javax.swing.*;
 
 import static org.junit.Assert.assertTrue;
 
-public class LogInUsers {
+public class FriendRequestAndMessage {
 
     @Test
 
@@ -66,10 +66,10 @@ public class LogInUsers {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-my-stream/div/div[2]/slp-todo/div/div/div[1]")));
         assertTrue(driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-my-stream/div/div[2]/slp-todo/div/div/div[1]")).getText().contains("Getting Started"));
 
-        //driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-header/div/div[2]/a[2]/span/mat-icon")).click(); //open friends list
-        //Thread.sleep(500);
-        //driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div/slp-friend-list/div[1]/div/div/span[1]")).click(); //accept request
-        //Thread.sleep(500);
+        driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-header/div/div[2]/a[2]/span/mat-icon")).click(); //open friends list
+        Thread.sleep(500);
+        driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div/slp-friend-list/div[1]/div/div/span[1]")).click(); //accept request
+        Thread.sleep(500);
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-header/div/div[2]/a[2]/span/mat-icon")).click(); //open friends list
         Thread.sleep(500);
         driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div/slp-friend-list/div[1]/div/div/div[2]/div[2]/span")).click(); //ckick to Direct message
