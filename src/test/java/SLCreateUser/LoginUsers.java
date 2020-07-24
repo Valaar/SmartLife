@@ -31,7 +31,6 @@ public class LoginUsers {
         Thread.sleep(3000);
 
         driver.quit();
-
     }
 
 }

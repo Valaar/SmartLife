@@ -71,6 +71,5 @@ public class PassRecoveryProton {
         assertTrue(driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-my-stream/div/slp-user-menu/div[2]/div/div[1]")).getText().contains("Test_protonmail"));
 
         driver.quit();
-
     }
 }
