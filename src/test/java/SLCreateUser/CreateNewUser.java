@@ -54,6 +54,7 @@ public class CreateNewUser {
         assertTrue(driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-my-stream/div/div[2]/slp-todo/div/div/div[1]")).getText().contains("Getting Started"));
 
         driver.quit();
+
     }
 
 }
