@@ -23,8 +23,8 @@ public class PassRecoveryProton {
         driver.manage().window().maximize();
 
         driver.get("https://smartlifepath-client-qa.herokuapp.com/web-site/home");
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[3]/div[1]/a")));
-        driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[3]/div[1]/a")).click(); //click to Forgot password button
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[4]/a")));
+        driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[4]/a")).click(); //click to Forgot password button
 
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-website/section/app-reset-password/div/div/section/div/div[2]/div/div/form/input")));
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-reset-password/div/div/section/div/div[2]/div/div/form/input")).sendKeys("Tesst_121212@protonmail.com"); //enter email
