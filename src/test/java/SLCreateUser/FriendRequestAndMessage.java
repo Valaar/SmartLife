@@ -59,7 +59,7 @@ public class FriendRequestAndMessage {
 
         driver.get("https://smartlifepath-client-qa.herokuapp.com/web-site/home");
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[1]/div/mat-form-field/div/div[1]/div[3]/input")));
-        driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[1]/div/mat-form-field/div/div[1]/div[3]/input")).sendKeys("polezniybess@gmail.com"); //enter login
+        driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[1]/div/mat-form-field/div/div[1]/div[3]/input")).sendKeys("tester09876543210@yahoo.com"); //enter login
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[2]/div/mat-form-field/div/div[1]/div[3]/input")).sendKeys("Qwerty123"); //enter password
         Thread.sleep(1000);
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-website/section/app-home/div/div/section[1]/div/div[2]/div[2]/div/mat-tab-group/div/mat-tab-body[1]/div/form/div[3]/div/button/span")).click(); //click LogIn button
@@ -72,7 +72,7 @@ public class FriendRequestAndMessage {
         Thread.sleep(500);
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-header/div/div[2]/a[2]/span/mat-icon")).click(); //open friends list
         Thread.sleep(500);
-        driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div/slp-friend-list/div[1]/div/div/div[2]/div[2]/span")).click(); //ckick to Direct message
+        driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div/slp-friend-list/div[1]/div/div/div[2]/div[2]/span")).click(); //click to Direct message
         Thread.sleep(500);
         driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/slp-send-message-dialog/slp-dialog-wrapper/div[2]/div/div[3]/div/textarea")).sendKeys("Test message"); //message
         driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/slp-send-message-dialog/slp-dialog-wrapper/div[3]/div/button/span")).click(); //click Send button
