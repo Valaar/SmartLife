@@ -60,7 +60,7 @@
     <distributionManagement>
         <repository>
             <id>releases</id>
-            <url>https://github.com/Valaar/SmartLife-Create-Event.git</url>
+            <url>https://github.com/Valaar/SmartLife.git</url>
         </repository>
     </distributionManagement>
 
