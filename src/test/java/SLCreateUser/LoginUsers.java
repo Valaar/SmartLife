@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.junit.Assert.assertTrue;
 
 public class LoginUsers {
-    /*
+
     @Test
 
     public void LogInUser1() throws InterruptedException {
@@ -34,5 +34,5 @@ public class LoginUsers {
         driver.quit();
 
     }
-*/
+
 }
