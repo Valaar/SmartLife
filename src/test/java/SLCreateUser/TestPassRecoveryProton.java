@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-public class PassRecoveryProton {
+public class TestPassRecoveryProton {
 
     @Test
 

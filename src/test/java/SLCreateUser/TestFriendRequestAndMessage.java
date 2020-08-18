@@ -13,7 +13,7 @@ import javax.swing.*;
 
 import static org.junit.Assert.assertTrue;
 
-public class FriendRequestAndMessage {
+public class TestFriendRequestAndMessage {
 
     @Test
 

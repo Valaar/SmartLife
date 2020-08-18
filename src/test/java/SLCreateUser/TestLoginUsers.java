@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertTrue;
 
-public class LoginUsers {
+public class TestLoginUsers {
 
     @Test
 
