@@ -42,7 +42,7 @@ public class TestDeleteUserProfile {
 
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@id=\"mat-tab-content-2-0\"]/div/div/form[1]/div[3]/button[1]/span")));
         driver.findElement(By.xpath("//*[@id=\"mat-tab-content-2-0\"]/div/div/form[1]/div[3]/button[1]/span")).click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         //Accept pop-up window
 
