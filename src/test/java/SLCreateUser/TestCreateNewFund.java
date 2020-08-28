@@ -47,12 +47,7 @@ public class TestCreateNewFund {
         driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("test test test test test test test test test test test test test test test test test test "); // add Description
 
         driver.findElement(By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div[4]/button/span")).click(); // click to Next button
-/*
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/div[2]/div[2]/div/mat-dialog-container/app-create-fund-dialog/div/mat-horizontal-stepper/div[2]/div[2]/form/div[1]/div[2]/mat-form-field/div/div[1]/div[3]/mat-datepicker-toggle/button")));
-        driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/mat-dialog-container/app-create-fund-dialog/div/mat-horizontal-stepper/div[2]/div[2]/form/div[1]/div[2]/mat-form-field/div/div[1]/div[3]/mat-datepicker-toggle/button")).click(); // open Calendar
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@id=\"mat-datepicker-1\"]/div/mat-month-view/table/tbody/tr[6]/td[2]/div")));
-        driver.findElement(By.xpath("//*[@id=\"mat-datepicker-1\"]/div/mat-month-view/table/tbody/tr[6]/td[2]/div")).click(); // select date
-*/
+
         driver.findElement(By.xpath("//*[@id=\"mat-input-4\"]")).sendKeys("5"); // select Goal amount
 
         driver.findElement(By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div[5]/button[2]/span")).click(); // click Save the Draft button
@@ -60,9 +55,17 @@ public class TestCreateNewFund {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-fund/div/div/div/div[2]/div[2]/div[1]/button[1]/span")));
         assertTrue(driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-fund/div/div/div/div[2]/div[2]/div[2]/div[1]")).getText().contains("Autotest Fund"));
 
+        // Delete Fund
 
+        driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-fund/div/div/div/div[2]/div[2]/div[1]/span/button[2]/span")).click();
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'Yes')]")));
+        driver.findElement(By.xpath("//*[contains(text(),'Yes')]")).click();
+
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-header/div/div[2]/button[3]/span")));
+        assertTrue(driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/app-slp-header/div/div[2]/button[3]/span")).getText().contains("Create"));
+
+        driver.quit();
 
     }
 }
 
-//*[contains(text(),'Faith')]
