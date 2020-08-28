@@ -32,7 +32,7 @@ public class TestPassRecoveryProton {
 
         ((JavascriptExecutor) driver).executeScript("window.open()");
         Thread.sleep(1000);
-        ArrayList tabs2 = new ArrayList(driver.getWindowHandles()); //переключение по вкладкам
+        ArrayList tabs2 = new ArrayList(driver.getWindowHandles()); //switch tab
         driver.switchTo().window((String) tabs2.get(1));
         Thread.sleep(1000);
 
@@ -54,7 +54,7 @@ public class TestPassRecoveryProton {
         Thread.sleep(3000);
 
 
-        ArrayList tabs3 = new ArrayList(driver.getWindowHandles()); //переключение по вкладкам
+        ArrayList tabs3 = new ArrayList(driver.getWindowHandles()); //switch tab
         driver.switchTo().window((String) tabs3.get(2));
 
         // 3 Tabs
