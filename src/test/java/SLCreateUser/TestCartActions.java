@@ -58,17 +58,22 @@ public class TestCartActions {
         Thread.sleep(500);
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-cart/div/div/div[2]/button/span")).click(); // click to Proceed to Checkout button
 
+        Thread.sleep(1500);
+
         // Continue to Payment
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),' CONTINUE TO PAYMENT ')]")));
-        driver.findElement(By.xpath("//*[contains(text(),' CONTINUE TO PAYMENT ')]")).click();
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-checkout/div/div[2]/div[1]/mat-horizontal-stepper/div[2]/div[1]/slp-checkout-shipping/div/button")));
+        driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-checkout/div/div[2]/div[1]/mat-horizontal-stepper/div[2]/div[1]/slp-checkout-shipping/div/button")).click();
 
         // REVIEW YOUR ORDER
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@id=\"cdk-step-content-3-1\"]/slp-checkout-payment/div/div[3]/button[2]/span")));
-        driver.findElement(By.xpath("//*[@id=\"cdk-step-content-3-1\"]/slp-checkout-payment/div/div[3]/button[2]/span")).click();
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@id=\"cdk-step-content-1-1\"]/slp-checkout-payment/div/div[3]/button[2]/span")));
+        driver.findElement(By.xpath("//*[@id=\"cdk-step-content-1-1\"]/slp-checkout-payment/div/div[3]/button[2]/span")).click();
 
         //  CHECKOUT
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-checkout/div/div[2]/div[2]/button/span")));
         driver.findElement(By.xpath("/html/body/app-root/section/app-slp-platform/section/slp-checkout/div/div[2]/div[2]/button/span")).click();
+        assertTrue(driver.findElement(By.xpath("//*[@id=\"cdk-step-content-1-2\"]/slp-checkout-review/div/h1")).getText().contains("Thank you for your contribution"));
+
+        driver.quit();
 
 
     }
